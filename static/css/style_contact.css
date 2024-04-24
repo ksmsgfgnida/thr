@@ -1,0 +1,817 @@
+
+
+
+body{
+    background-color: #F2F2ED;
+    margin: 0;
+
+}
+.header{
+    align-content: center;
+    justify-content: space-around;
+    display: flex;
+    height: 4vw;
+    color: #0000;
+    font-family: Playfair Display SC;
+    font-size: 1.1vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    background-color: #F2F2ED;
+    
+}
+
+h10{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Playfair Display SC;
+    font-size: 1em; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 17vw;
+}
+
+h18{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Playfair Display SC;
+    font-size: 1vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 1.7vw;
+}
+
+h16{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Playfair Display SC;
+    font-size: 1vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 35vw;
+}
+
+
+
+h0{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Playfair Display SC;
+    font-size: 1vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 2vw;/* Adjust the top margin as needed to push the text down */
+    align-items: flex-start;
+}
+
+h17{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Playfair Display SC;
+    font-size: 1vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 2vw;/* Adjust the top margin as needed to push the text down */
+    align-items: flex-start;
+}
+
+h12{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.4vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    align-items: flex-start;
+    margin-left: 2vw;/* Adjust the top margin as needed to push the text down */
+
+}
+
+h1{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 2.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 2vw; /* Adjust the top margin as needed to push the text down */
+    margin-left: 2vw; /* Adjust the left margin as needed to push the text right */
+}
+
+h6{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 2.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 2vw; /* Adjust the top margin as needed to push the text down */
+    margin-left: 3vw; /* Adjust the left margin as needed to push the text right */
+}
+
+
+h3{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 2.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 2vw; /* Adjust the top margin as needed to push the text down */
+    margin-left: 1vw; /* Adjust the left margin as needed to push the text right */
+}
+
+h4{
+    color: #000;
+    text-align: center;
+    font-family: Playfair Display SC;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 1.5vw; /* Adjust the top margin as needed to push the text down */
+    margin-right: 17vw; /* Adjust the left margin as needed to push the text right */
+}
+
+h20{
+    color: #000;
+    text-align: center;
+    font-family: Playfair Display SC;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 1.5vw; /* Adjust the top margin as needed to push the text down */
+    margin-left: 1%; /* Adjust the top margin as needed to push the text down */
+}
+
+h7{
+    color: #000;
+    text-align: center;
+    font-family: Playfair Display SC;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+h2{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.7vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+p{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 2.7vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h13{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Playfair Display SC;
+    font-size: 1vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h14{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Playfair Display SC;
+    font-size: 1vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h15{
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Playfair Display SC;
+    font-size: 1vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.podblock1{
+    justify-self: left;
+    width: 60%;
+    height: 23vw; /* 30% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: #FFC224;
+}
+
+.podblock_1{
+    justify-self: left;
+    width: 33.9vw;
+    height: 27vw; /* 50% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: #F0D92A;
+}
+
+.podblock{
+    width: 40%;
+    height: 23vw; /* 30% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: #B8AF9E;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.podblock_{
+    width: 65vw;
+    height: 27vw; /* 50% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: #F2F2ED;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.block1{
+    justify-content: left;
+    align-self: flex-start;
+    display: flex;
+    margin-top: 3.5vw;
+    width: 100%;
+}
+.block2{
+    justify-content: left;
+    align-self: flex-start;
+    display: flex;
+}
+.block3{
+    justify-content: left;
+    align-self: flex-start;
+    display: flex;
+}
+
+.carta{
+    width: 98.9vw;
+    height: 35vw; /* 70% of the viewport height */
+    flex-shrink: 0;
+}
+
+
+
+.block4{
+    width: 98.9vw;
+    height: 17vw; /* 50% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: #D9D9D9;
+}
+
+.tel,
+.vk,
+.yut{
+    width: 32.97vw;
+    height: 7vw; /* 50% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    background: #F2F2ED;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer_up{
+    width: 98.9vw;
+    height: 5vw; /* 50% of the viewport height */
+    border: 1px solid #000;
+    background: #F2F2ED;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_down{
+    width: 98.9vw;
+    height: 7.4vw; /* 50% of the viewport height */
+    border: 1px solid #000;
+    background: #F2F2ED;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.credit{
+    width: 83.9vw;
+    height: 7.4vw; /* 50% of the viewport height */
+    display: flex;
+    justify-content: center;
+    margin-left: 13vw;
+    align-items: center;
+}
+.svz{
+    width: 10vw;
+    height: 4vw; /* 50% of the viewport height */
+    justify-content: center;
+    margin-right: 2vw;
+    margin-bottom: 0.3vw;
+}
+
+.icons img{
+    width: 2vw;
+
+}
+
+.icons{
+    width: 7vw;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+h8{
+    color: #000;
+    text-align: center;
+    font-family: Playfair Display SC;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 2vw;
+}
+
+.nav-link{
+    color: #000;
+
+}
+.nav-link:hover {
+    color: #F0D92A;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 73px;
+    color: #000;
+    line-height: normal;
+    text-transform: uppercase;
+    justify-content: center; /* Логотип будет выравниваться слева */
+    margin-bottom: 1.5vw;
+}
+
+.navbar-brand img {
+    position: relative;
+    width: 13vw; /* Логотип будет уменьшаться при уменьшении родительского элемента */
+    top: 0.3vw;
+}
+
+
+.arrow-button{
+    background-color: white; /* задаем белый цвет */
+    border-radius: 50%; /* делаем кнопку круглой */
+    font-size: 1.5rem; /* задаем размер шрифта */
+    width: 5vw; /* задаем ширину кнопки */
+    height: 5vw; /* задаем высоту кнопки */
+    border: none; /* убираем границу */
+    cursor: pointer; /* добавляем стиль курсора при наведении */
+    display: none; /* кнопка изначально скрыта */
+  }
+
+  .arrow-button:hover{
+    background-color: #F0D92A; /* задаем белый цвет */
+  }
+
+
+  .navbar-toggler:hover{
+    color: #F0D92A;
+  }
+
+  .navbar-toggler{
+    display: flex;
+    padding-inline-end:0%;
+    color: #000;
+    width: 3vw;
+    list-style-type: style none; 
+  }
+
+  .container-fluid{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .navbar {
+    width: 100%; /* 100% of the parent container's width */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+  }
+  .navbar-nav1 {
+    display: flex;
+    flex-grow: 0.2;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+  }
+
+  .link{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .link:hover{
+    color: #F0D92A;
+  }
+
+.footer_up img{
+    width: 13vw; /* Логотип будет уменьшаться при уменьшении родительского элемента */
+}
+
+.vetv1{
+    display: flex;
+    height: 4vw;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.vetv2{
+    display: flex;
+    height: 4vw;
+    background-color: #000;
+    border: 1px solid #000;
+    margin-left: 3%;
+}
+
+.ic{
+    width: 1vw;
+    height: 1vw;
+}
+
+.text{
+    margin-top: 6vw;
+}
+
+.name{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 20vw;
+}
+
+.email{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 3vw;
+}
+
+.min{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 3vw;
+}
+
+.number{
+    color: #000;
+    font-family: Unna;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 20vw;
+}
+
+
+.text1{
+    margin-top: 7vw;
+}
+
+.contener{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contener1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw;
+}
+
+.stolbic1{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 2vw;
+}
+
+.stolbic2{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 2vw;
+}
+
+.stolbic3{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 2vw;
+}
+
+.name1{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 1vw;
+}
+
+.email1{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 1vw;
+}
+
+.number1{
+    color: #000;
+    font-family: Unna;
+    font-size: 1.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 1vw;
+}
+
+.number2{
+    color: #000;
+    font-family: Unna;
+    font-size: 1.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 1vw;
+}
+
+.name2{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 1vw;
+}
+
+.number3{
+    color: #000;
+    font-family: Unna;
+    font-size: 1.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 1vw;
+}
+
+.name3{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 1vw;
+}
+
+.adress{
+    display: flex;
+    align-items: baseline;
+}
+
+.zagolovok{
+    margin-left: 5%;
+}
+
+.text2{
+    margin-top: 7vw;
+}
+
+
+.name4{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 36vw;
+}
+
+.email4{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 3vw;
+}
+
+.number4{
+    color: #000;
+    font-family: Unna;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 36vw;
+}
+
+
+.address{
+    color: #000;
+    font-family: Unna;
+    font-size: 1.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 3vw;
+}
+
+.time{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 3vw;
+}
+
+.news{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 5vw;
+    align-items: center;
+    display: flex;
+    margin-left: 1vw;
+}
+
+.web{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .web:hover{
+    color: #B8AF9E;
+  }
+
+.number6{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 3vw;
+}
+
+.webs{
+    color: #000;
+    font-family: Unna;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 3vw;
+}
+
+/* Модальный (фон) */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  }
+  
+  /* Модальное содержание/коробка */
+  .modal-content {
+    background-color: #F2F2ED;
+    margin: auto; /* 15% сверху и по центру */
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  }
+  
+  /* Кнопка закрытия */
+  .close {
+    display: flex;
+    width: 20%;
+    height: 8vw;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+@media (max-width: 768px) {
+    .block1 {
+      flex-direction: column;
+    }
+  
+    .podblock1, .podblock {
+      order: 1;
+      width: 100%; /* Задаем ширину на всю ширину экрана */
+      box-sizing: border-box; /* Предотвращает выход контента за пределы блока */
+    }
+  
+    .podblock1 {
+      order: 2;
+    }
+}

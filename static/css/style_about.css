@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nokora&family=Unna&display=swap');
+
+body{
+    background-color: #F2F2ED;
+    margin: 0;
+
+}
+.header{
+    align-content: center;
+    justify-content: space-around;
+    display: flex;
+    height: 4vw;
+    color: #0000;
+    font-family: Playfair Display SC;
+    font-size: 1.1vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    background-color: #F2F2ED;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    margin-top: -4%;
+}
+h{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 9vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+h1{
+    color: white;
+    font-family: Playfair Display SC;
+    font-size: 1.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #000;
+    font-family: Nokora;
+    font-size: 2vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+p{
+    color: #000;
+    font-family: Playfair Display SC;
+    font-size: 2.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+h3{
+    color: #000;
+    font-family:Playfair Display SC;
+    font-size: 4.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    border:1px solid #000;
+}
+
+.telo2{
+    justify-content: left;
+    align-self: center;
+    display: flex;
+    height: 48vw;
+    width: 100%;
+}
+
+.slii{
+    width: 98.9vw;
+    height: 32.3vw; /* 70% of the viewport height */
+    flex-shrink: 0;
+    z-index: 1;
+    margin-top: 3.5vw;
+}
+  
+
+.block1{
+    width: 20vw;
+    height: 48vw; /* 50% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.block3{
+    width: 23vw;
+    height: 48vw; /* 50% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.block3 img{
+    width: 23vw;
+    opacity: 50%;
+}
+
+
+.block2{
+    width: 55.9vw;
+    height: 48vw; /* 50% of the viewport height */
+    flex-shrink: 0;
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: auto; /* добавляем вертикальную прокрутку */
+}
+
+.block2::-webkit-scrollbar{
+    width: 0;
+}
+
+p1{ 
+    color: white;
+    font-family: Playfair Display SC;
+    font-size: 1.8vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    z-index:100;
+    top:7%;
+
+
+}
+p2{
+    color: white;
+    font-family: Playfair Display SC;
+    font-size: 1.5vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    z-index:100;
+    top:65%;
+
+}
+
+p3{
+    color: #000;
+    font-family: 'Nokora', sans-serif;
+    font-size: 1.3vw; /* 2% of the viewport width */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+a{
+    text-decoration: none;
+}
+
+#selection1 {
+    scroll-margin-top: 1.8vw;
+
+}
+
+#selection2 {
+    scroll-margin-top: 2.8vw;
+
+}
+
+#selection3 {
+    scroll-margin-top: 2.8vw;
+
+}
+
+.foto1,
+.foto2,
+.foto3{
+    width: 100%;
+    height:13vw;
+    border: 1px solid #000;
+    overflow: hidden;/* делаем задний фон черным, чтобы изображения были невидимы */
+    text-align: center;
+}
+
+.ras1,
+.ras2,
+.ras3{
+    width: 100%;
+    height:15.96vw;
+    border: 1px solid #000;
+    overflow: hidden;
+    background-color: black; /* делаем задний фон черным, чтобы изображения были невидимы */
+    border-bottom:1px solid rgba(155, 149, 149, 0.73);
+    text-align: center;
+}
+
+.ras1:hover,
+.ras2:hover,
+.ras3:hover {
+    background-color: transparent;
+     /* при наведении делаем задний фон прозрачным, чтобы показать изображение */
+}
+
+.ras1:hover p1,
+.ras2:hover p1,
+.ras3:hover p1,
+.ras1:hover p2,
+.ras2:hover p2,
+.ras3:hover p2{
+    color: #000;
+     /* при наведении делаем задний фон прозрачным, чтобы показать изображение */
+}
+
+.ras1 img,
+.ras2 img,
+.ras3 img {
+    opacity: 0; /* при наведении делаем изображение полностью прозрачным */
+}
+
+.ras1:hover img,
+.ras2:hover img,
+.ras3:hover img {
+    opacity: 1;
+}
+
+.nav-link{
+    color: #000;
+
+}
+.nav-link:hover {
+    color: #F0D92A;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 150%;
+    color: #000;
+    line-height: normal;
+    text-transform: uppercase;
+    justify-content: center; /* Логотип будет выравниваться слева */
+    margin-bottom: 1.5vw;
+}
+
+.navbar-brand img {
+    position: relative;
+    width: 13vw; /* Логотип будет уменьшаться при уменьшении родительского элемента */
+    top:0.2vw;
+    flex-shrink: 0;
+}
+
+
+.arrow-button{
+    background-color: white; /* задаем белый цвет */
+    border-radius: 50%; /* делаем кнопку круглой */
+    font-size: 1.5rem; /* задаем размер шрифта */
+    width: 5vw; /* задаем ширину кнопки */
+    height: 5vw; /* задаем высоту кнопки */
+    border: none; /* убираем границу */
+    cursor: pointer; /* добавляем стиль курсора при наведении */
+    display: none; /* кнопка изначально скрыта */
+  }
+
+  .arrow-button:hover{
+    background-color: #F0D92A; /* задаем белый цвет */
+  }
+
+
+  .navbar-toggler:hover{
+    color: #F0D92A;
+  }
+
+  .navbar-toggler{
+    display: flex;
+    padding-inline-end:0%;
+    color: #000;
+    width: 3vw;
+    list-style-type: style none; 
+  }
+
+  .container-fluid{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .navbar {
+    width: 100%; /* 100% of the parent container's width */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+  }
+  .navbar-nav1 {
+    display: flex;
+    flex-grow: 0.2;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+  }
+
+  .footer_up img{
+    width: 13vw; /* Логотип будет уменьшаться при уменьшении родительского элемента */
+}
+
+.ic{
+    width: 1vw;
+    height: 1vw;
+}
+
+.footer_up{
+    width: 98.9vw;
+    height: 5vw; /* 50% of the viewport height */
+    border: 1px solid #000;
+    background: #F2F2ED;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_down{
+    width: 98.9vw;
+    height: 7.4vw; /* 50% of the viewport height */
+    border: 1px solid #000;
+    background: #F2F2ED;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.credit{
+    width: 83.9vw;
+    height: 7.4vw; /* 50% of the viewport height */
+    display: flex;
+    justify-content: center;
+    margin-left: 13vw;
+    align-items: center;
+}
+.svz{
+    width: 10vw;
+    height: 4vw; /* 50% of the viewport height */
+    justify-content: center;
+    margin-right: 2vw;
+    margin-bottom: 0.3vw;
+}
+
+.icons img{
+    width: 2vw;
+
+}
+
+.icons{
+    width: 7vw;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+h7{
+    color: #000;
+    text-align: center;
+    font-family: Playfair Display SC;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+h8{
+    color: #000;
+    text-align: center;
+    font-family: Playfair Display SC;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 2vw;
+}
+
+.vetv1{
+    display: flex;
+    height: 4vw;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.vetv2{
+    display: flex;
+    height: 4vw;
+    background-color: #000;
+    border: 1px solid #000;
+    margin-left: 3%;
+}
+
+
+.carousel-indicators{
+    margin-bottom: 6%;
+}
+
+/* Модальный (фон) */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  }
+  
+  /* Модальное содержание/коробка */
+  .modal-content {
+    background-color: #F2F2ED;
+    margin: auto; /* 15% сверху и по центру */
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  }
+  
+  /* Кнопка закрытия */
+  .close {
+    display: flex;
+    width: 20%;
+    height: 8vw;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 992px) {
+    .vetv2 {
+      margin-left: 70%; /* Показываем по семь элементов в ширину */
+    }
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Билеты</title>
+    <link rel="stylesheet" href="style_bilet.css">
+</head>
+<body>
+        <div class="header">
+            <div class="logo">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/log.png" alt=""></a>
+            </div>
+            <div class="vetv1"></div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Меню">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav" style="width: 100%;">
+                            <a class="nav-link active" aria-current="page" href="bilet.html">Билеты</a>
+                            <a class="nav-link" href="repertuar.html">Репертуар</a>
+                            <a class="nav-link" href="collectiv.html">О театре</a>
+                            <a class="nav-link" href="contact.html">Контакты</a>
+                        </div>
+                    </div>
+                    <div class="vetv2"></div>
+                    <!-- Модальный -->
+                    <div id="myModal1" class="modal1">
+                    <!-- Модальное содержание -->
+                        <div class="modal-content1">
+                            <div style="display: flex; width: 100%; height: 16.5%;">
+                                <a href="index.html" style ="text-decoration: none; width: 80%;"><div style="border: 1px solid #000; width:100%; height: 100%; display:flex;align-items:center;"><p style="margin-left: 2%;">Главная</p></div></a>
+                                <span class="close1" style="border: 1px solid #000;" style ="text-decoration: none;"><p>Закрыть</p></span>
+                            </div>
+                            <div style="display: flex; width: 100%; height: 34%;">
+                                <div style="width:80%;">
+                                    <a href="bilet.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center;"><p style="margin-left: 2%;">Билеты</p></div></a>
+                                    <a href="repertuar.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center;"><p style="margin-left: 2%;">Репертуар<p></div></a>
+                                </div>
+                                <a href="vosvrat.html" style ="text-decoration: none; width: 20%;"><div style="border: 1px solid #000; height: 100%; display:flex;align-items:center; justify-content: center; text-align: center;"><p>Возврат <br> билетов</p></div></a>
+                            </div>
+                            <div style="display: flex; width: 100%; height: 34%;">
+                                <div style="width:80%;">
+                                    <a href="collectiv.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center; "><p style="margin-left: 2%;">О театре</p></div></a>
+                                    <a href="contact.html" style ="text-decoration: none; width: 100%;"><div style="border: 1px solid #000; height: 50%; display:flex;align-items:center;"><p style="margin-left: 2%;">Контакты</p></div></a>
+                                </div>
+                                <a href="parthner.html" style ="text-decoration: none; width: 20%;"><div style="border: 1px solid #000; height: 100%; display:flex;align-items:center; justify-content: center;"><p>Парнёры</p></div></a>
+                            </div>
+                            <a href="doc.html" style ="text-decoration: none; width: 100%; height:16.5%; color:#000"><div style="border: 1px solid #000; height: 16.5%; display: flex; justify-content: center; align-items: center;"><p>Документация</p></div></a>
+                        </div>
+
+                    </div>
+                    <!-- Конец кода модального окна меню -->
+                    <div class="navbar-nav1">
+                        <a class="nav-link" id="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Меню</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+        <div class="telo" style="position: relative;">
+            <img src="img/Upscales.ai_1702334624913.jpeg" alt="" style="width: 100vw;">
+            <h20 style="position: absolute; top: 12vw; left: 31vw;">Билеты</h20>
+        </div>
+
+        <!-- календарь -->
+    <div class="calendar">
+        <div class="sob" style="display: flex; justify-content: space-around;">
+            <a href="#"><h2 >Январь</h2></a>
+            <a href="#"><h2 >Февраль</h2></a>
+            <a href="#"><h2 >Март</h2></a>
+            <a href="#"><h2 >Апрель</h2></a>
+            <a href="#"><h2 >Май</h2></a>
+            <a href="#"><h2 >Июнь</h2></a>
+            <a href="#"><h2 >Июль</h2></a>
+            <a href="#"><h2 >Август</h2></a>
+            <a href="bilet.html"><h2 style="color:orange">Сентябрь</h2></a>
+            <a href="#"><h2 >Октябрь</h2></a>
+            <a href="#"><h2 >Ноябрь</h2></a>
+            <a href="#"><h2 >Декабрь</h2></a>
+        </div>
+        <div class="calen_weeks">
+            <div class="mondey"></div>
+            <div class="thetheday"></div>
+            <div class="sreda"></div>
+            <div class="chetverg"></div>
+            <div class="friday"><p1>1</p1><p2>пт</p2></div>
+            <div class="subb"><p1>2</p1><p2>сб</p2></div>
+            <div class="vosk"><p1>3</p1><p2>вс</p2></div>
+            <div class="mondey"><p1>4</p1><p2>пн</p2></div>
+            <div class="thetheday"><p1>5</p1><p2>вт</p2></div>
+            <div class="sreda"><p1>6</p1><p2>ср</p2></div>
+            <div class="chetverg"><p1>7</p1><p2>чт</p2></div>
+            <div class="friday"><p1>8</p1><p2>пт</p2><img src="img/спектакль 2.png"><button id="ot">Купить билет</button></div>
+            <div class="subb"><p1>9</p1><p2>сб</p2><img src="img/каренина 3.png" ><button id="ot1">Купить билет</button></div>
+            <div class="vosk"><p1>10</p1><p2>вс</p2><img src="img/гамлет 2.png"><button id="ot2">Купить билет</button></div>
+            <div class="mondey"><p1>11</p1><p2>пн</p2></div>
+            <div class="thetheday"><p1>12</p1><p2>вт</p2></div>
+            <div class="sreda"><p1>13</p1><p2>ср</p2><img src="img/Rectangle 46.png"><button id="ot3">Купить билет</button></div>
+            <div class="chetverg"><p1>14</p1><p2>чт</p2><img src="img/спектакль 2.png"><button id="ot4">Купить билет</button></div>
+            <div class="friday"><p1>15</p1><p2>пт</p2></div>
+            <div class="subb"><p1>16</p1><p2>сб</p2></div>
+            <div class="vosk"><p1>17</p1><p2>вс</p2></div>
+            <div class="mondey"><p1>18</p1><p2>пн</p2></div>
+            <div class="thetheday"><p1>19</p1><p2>вт</p2></div>
+            <div class="sreda"><p1>20</p1><p2>ср</p2><img src="img/каренина 3.png"><button id="ot5">Купить билет</button></div>
+            <div class="chetverg"><p1>21</p1><p2>чт</p2></div>
+            <div class="friday"><p1>22</p1><p2>пт</p2></div>
+            <div class="subb"><p1>23</p1><p2>сб</p2><img src="img/ангельчик 2.png"><button id="ot6">Купить билет</button></div>
+            <div class="vosk"><p1>24</p1><p2>вс</p2></div>
+            <div class="mondey"><p1>25</p1><p2>пн</p2><img src="img/гамлет 2.png"><button id="ot7">Купить билет</button></div>
+            <div class="thetheday"><p1>26</p1><p2>вт</p2></div>
+            <div class="sreda"><p1>27</p1><p2>ср</p2></div>
+            <div class="chetverg"><p1>28</p1><p2>чт</p2></div>
+            <div class="friday"><p1>29</p1><p2>пт</p2></div>
+            <div class="subb"><p1>30</p1><p2>сб</p2></div>
+            <div class="vosk"></div>
+        </div>
+        
+    </div>
+
+
+    <div class="footer_up">
+        <div class="logo_2">
+            <img src="img/logo.png" alt="">
+        </div>
+    </div>
+    <div class="footer_down">
+        <div class="credit">
+            <h7>© Владимирский областной академический  театр драмы, 2009-2023<br>
+                600000, Владимир, дворянская 4<br>Пресс служба: dramapress@mail.ru<br></h7>
+        </div>
+        <div class="svz">
+            <h8>Мы в соц.сетях:</h8>
+            <div class = "icons">
+                <a class ="ic" href="https://vk.com/vladimir_drama33"><img src="img/vk.png" alt=""></a>
+                <a class ="ic" href="https://t.me/vladimir_drama"><img src="img/tg.png" alt=""></a>
+                <a class ="ic" href="https://ok.ru/group/70000002276220"><img src="img/okru.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <button class="arrow-button" onclick="scrollToTop()" style="position: fixed; bottom: 2vw; right: 1vw;">&#8679;</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <div id="bill" class="modaling">
+
+        <!-- Модальное содержание -->
+            <div class="modal-contenting">
+                <span class="close">&times;</span>
+                <p style="display: flex; justify-content: center; margin-left: 20%;">Оформить заказ</p>
+                <form id="myForm">
+                    <div class="left-column">
+                        <label for="fullName">ФИО</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Введите ФИО"><br><br>
+            
+                        <label for="phoneNumber">Номер телефона:</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="89[0-9]{9}" placeholder="89123456789"><br><br>
+            
+                        <label for="email">Электронная почта:</label>
+                        <input type="email" id="email" name="email" placeholder="Введите электронную почту"><br><br>
+                    </div>
+                    <div class="middle-column">
+                        <label for="location">Локация:</label>
+                        <select id="location" name="location">
+                            <option value="">Выбирете локацию</option>
+                            <option value="parter">Партер</option>
+                            <option value="balcony">Балкон</option>
+                        </select><br><br>
+            
+                        <label for="seatRow">Ряд:</label>
+                        <select id="seatRow" name="seatRow">
+                            <option value="">Выбирете ряд</option>
+                        </select><br><br>
+            
+                        <label for="seatNumber">Место посадки:</label>
+                        <select id="seatNumber" name="seatNumber">
+                            <option value="">Выбирете место</option>
+                        </select><br><br>
+                    </div>
+                    <div class="right-column">
+                        <label for="fullName">Номер карты</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="1111 2222 3333 4444"><br><br>
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="col-25">
+                                    <label for="fullName"></label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="MM"><br><br>
+                                </div>
+                                <div class="col-25">
+                                    <label for="fullName"></label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="ГГ"><br><br>
+                            
+                                </div>
+                            </div>
+                            <div class="col-50">                            <label for="fullName">CVV</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="CVV"><br><br>
+                            </div>
+                        </div>
+                            <input type="submit" value="Оформить билет" >
+                        <p6 id="message"></p6>
+                    </div>
+                </div>
+            </form>
+            </div>
+
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+        var button = document.querySelector('.arrow-button');
+        if (window.scrollY > 100) { // кнопка появляется, когда прокручено более 100 пикселей
+            button.style.display = 'block'; // отображаем кнопку
+        } else {
+            button.style.display = 'none'; // скрываем кнопку
+        }
+        });
+        function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // добавляем плавность прокрутке
+        });
+    }
+    </script>
+
+    <script>
+        // Получить модальный
+        var modal1 = document.getElementById("myModal1");
+    
+        // Получить кнопку, которая открывает модальный
+        var btn1 = document.getElementById("myBtn");
+    
+        // Получить элемент <span>, который закрывает модальный
+        var span1 = document.getElementsByClassName("close1")[0];
+    
+        // Когда пользователь нажимает на кнопку, откройте модальный
+        btn1.onclick = function() {
+        modal1.style.display = "block";
+        }
+    
+            // Когда пользователь нажимает на <span> (x), закройте модальное окно
+        span1.onclick = function() {
+        modal1.style.display = "none";
+        }
+    
+        // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+        window.onclick = function(event) {
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        }
+        }     
+    </script>
+
+
+<script>
+    // Получить модальный
+    var lol = document.getElementById("bill");
+
+    // Получить кнопку, которая открывает модальный
+    var zz = document.getElementById("ot");
+    var zz1 = document.getElementById("ot1");
+    var zz2 = document.getElementById("ot2");
+    var zz3 = document.getElementById("ot3");
+    var zz4 = document.getElementById("ot4");
+    var zz5 = document.getElementById("ot5");
+    var zz6 = document.getElementById("ot6");
+    var zz7 = document.getElementById("ot7");
+
+    // Получить элемент <span>, который закрывает модальный
+    var pot = document.getElementsByClassName("close")[0];
+
+    // Когда пользователь нажимает на кнопку, откройте модальный
+    zz.onclick = function() {
+        lol.style.display = "block";
+    }
+    zz1.onclick = function() {
+        lol.style.display = "block";
+    }
+    zz2.onclick = function() {
+        lol.style.display = "block";
+    }
+    zz3.onclick = function() {
+        lol.style.display = "block";
+    }
+    zz4.onclick = function() {
+        lol.style.display = "block";
+    }
+    zz5.onclick = function() {
+        lol.style.display = "block";
+    }
+    zz6.onclick = function() {
+        lol.style.display = "block";
+    }
+    zz7.onclick = function() {
+        lol.style.display = "block";
+    }
+
+        // Когда пользователь нажимает на <span> (x), закройте модальное окно
+    pot.onclick = function() {
+        lol.style.display = "none";
+    }
+
+    // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+    window.onclick = function(event) {
+    if (event.target == lol) {
+        lol.style.display = "none";
+        }
+    }     
+</script>
+<script>
+    const locationSelect = document.getElementById('location');
+    const seatRowSelect = document.getElementById('seatRow');
+    const seatNumberSelect = document.getElementById('seatNumber');
+
+    // Функция для заполнения списка рядов и мест
+    function populateSeatOptions(location) {
+        // Очищаем текущие опции
+        seatRowSelect.innerHTML = '<option value="">Выбирете ряд</option>';
+        seatNumberSelect.innerHTML = '<option value="">Выбирете место</option>';
+
+        // Заполняем список рядов и мест в зависимости от выбранной локации
+        if (location === 'parter') {
+            for (let i = 1; i <= 16; i++) {
+                seatRowSelect.innerHTML += `<option value="${i}">Ряд ${i}</option>`;
+            }
+            for (let j = 1; j <= 34; j++) {
+                seatNumberSelect.innerHTML += `<option value="${j}">Место ${j}</option>`;
+            }
+            seatNumberSelect.innerHTML += '<option value="A">Место A</option>';
+            seatNumberSelect.innerHTML += '<option value="B">Место B</option>';
+            seatNumberSelect.innerHTML += '<option value="C">Место C</option>';
+            seatNumberSelect.innerHTML += '<option value="D">Место D</option>';
+        } else if (location === 'balcony') {
+            for (let i = 1; i <= 7; i++) {
+                seatRowSelect.innerHTML += `<option value="${i}">Ряд ${i}</option>`;
+            }
+            for (let j = 1; j <= 28; j++) {
+                seatNumberSelect.innerHTML += `<option value="${j}">Место ${j}</option>`;
+            }
+        }
+    }
+
+// Обновляем списки рядов и мест при изменении выбора локации
+    locationSelect.addEventListener('change', function() {
+        const selectedLocation = locationSelect.value;
+        populateSeatOptions(selectedLocation);
+    });
+
+    // Инициализируем списки рядов и мест при загрузке страницы
+    populateSeatOptions(locationSelect.value);
+
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Отменяем стандартное действие отправки формы
+
+        // Получаем значения полей формы
+        const fullName = document.getElementById('fullName').value;
+        const location = document.getElementById('location').value;
+        const seatRow = document.getElementById('seatRow').value;
+        const seatNumber = document.getElementById('seatNumber').value;
+
+        // Валидация полей
+        let isValid = true;
+        let errorMessage = '';
+
+        // Проверка на заполненность полей
+        if (fullName === '') {
+            isValid = false;
+            errorMessage += 'Please enter your full name.\n';
+        }
+        if (location === '') {
+            isValid = false;
+            errorMessage += 'Please select a location.\n';
+        }
+        if (seatRow === '') {
+            isValid = false;
+            errorMessage += 'Please select a row.\n';
+        }
+        if (seatNumber === '') {
+            isValid = false;
+            errorMessage += 'Please select a seat.\n';
+        }
+
+        // Показываем сообщение об ошибке или успешной отправке
+        const messageElement = document.getElementById('message');
+        if (isValid) {
+            // Отправка формы
+            messageElement.style.color = 'green';
+            messageElement.textContent = 'Ваш заказ оформлен';
+            // Добавьте здесь логику для отправки данных формы на сервер
+        } else {
+            // Ошибка заполнения формы
+            messageElement.style.color = 'red';
+            messageElement.textContent = errorMessage;
+        }
+    });
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+    // Очищаем значения полей формы
+    document.getElementById("myForm").reset();
+    });
+</script>
+
+</body>
+</html>

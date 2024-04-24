@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ category.name }} Performances</title>
+</head>
+<body>
+    <h1>{{ category.name }} Performances</h1>
+
+    <ul>
+        {% for performance in performances %}
+            <li>
+                <h2>{{ performance.title }}</h2>
+                <p>Age Limit: {{ performance.age_limit }}</p>
+                <p>Description: {{ performance.description }}</p>
+                <img src="{{ performance.photo.url }}" alt="Performance Photo">
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

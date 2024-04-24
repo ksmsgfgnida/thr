@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Performance List</title>
+</head>
+<body>
+    <h1>Performances</h1>
+
+    <a href="{% url 'performance_create' %}">Create New Performance</a>
+    <ul>
+        {% for performance in performances %}
+            <li>
+                <h2><a href="{% url 'performance_detail' performance.pk %}">{{ performance.title }}</a></h2>
+                <p>Category: {{ performance.category.name }}</p>
+                <p>Age Limit: {{ performance.age_limit }}</p>
+                <a href="{% url 'performance_update' performance.pk %}">Edit</a> |
+                <a href="{% url 'performance_delete' performance.pk %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
