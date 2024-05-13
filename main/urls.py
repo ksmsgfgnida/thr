@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.urls import path
 from . import views
-from .views import category_performance_list, profile
+from .views import category_performance_list
 from .views import register_view, login_view
 from django.urls import reverse_lazy
 from django.contrib.auth.views import LoginView
@@ -31,5 +31,4 @@ urlpatterns = [
     path('performances/<int:pk>/delete/', views.performance_delete, name='performance_delete'),
     path('register/', views.register_view, name='register'),
     path('login/', views.login_view, name='login'),
-    path('profile/<str:user>/', views.profile, name='profile'),
 ]

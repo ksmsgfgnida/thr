@@ -3,7 +3,6 @@ from .models import Category, Performance, User
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import CreateView
 from django.urls import reverse_lazy, reverse
-from .models import Profile
 from django.contrib.auth import login
 
 
@@ -36,10 +35,6 @@ def register_view(request):
         form = RegistrationForm()
         return render(request, 'register.html', {'form': form})
 
-
-def profile(request, user):
-    profile = Profile.get.object(username=user)
-    return render(request, 'profile.html', {'profile': profile})
 
 
 def category_performance_list(request, category_id):
