@@ -1,16 +1,8 @@
-
 from .models import Category, Performance, User
 from django.shortcuts import render, get_object_or_404, redirect
-from django.views.generic import CreateView
-from django.urls import reverse_lazy, reverse
 from django.contrib.auth import login
-
-
-from .forms import RegistrationForm, LoginForm
-from django.contrib.messages.views import SuccessMessageMixin
+from .forms import RegistrationForm, LoginForm, PerformanceForm
 from django.contrib.auth.views import LoginView
-
-from .forms import PerformanceForm
 
 
 def login_view(request):
@@ -86,6 +78,12 @@ def performance_delete(request, pk):
 def index(request):
     return render(request, 'index.html')
 
+def doc(request):
+    return render(request, 'doc.html')
 
+def arhive(request):
+    return render(request, 'arhive.html')
 
-# Create your views here.
+def contact(request):
+    return render(request, 'contact.html')
+

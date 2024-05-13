@@ -16,13 +16,13 @@ Including another URLconf
 """
 from django.urls import path
 from . import views
-from .views import category_performance_list
-from .views import register_view, login_view
-from django.urls import reverse_lazy
-from django.contrib.auth.views import LoginView
+from .views import category_performance_list, register_view, login_view, doc, arhive, contact
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('doc/', views.doc, name='doc'),
+    path('arhive/', views.arhive, name='arhive'),
+    path('contact/', views.contact, name='contact'),
     path('category/<str:category_id>/', category_performance_list, name='category_performance_list'),
     path('performances/', views.performance_list, name='performance_list'),
     path('performances/create/', views.performance_create, name='performance_create'),
