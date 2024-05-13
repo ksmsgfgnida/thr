@@ -23,8 +23,5 @@ from django.contrib.auth.models import User
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, unique=True)
-
-
-
     def get_absolute_url(self):
         return reverse('profile', kwargs={'username': self.user.username})

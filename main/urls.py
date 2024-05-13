@@ -17,20 +17,19 @@ Including another URLconf
 from django.urls import path
 from . import views
 from .views import category_performance_list, profile
-from .views import UserRegisterView, UserLoginView
+from .views import register_view, login_view
 from django.urls import reverse_lazy
 from django.contrib.auth.views import LoginView
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.index, name='index'),
     path('category/<str:category_id>/', category_performance_list, name='category_performance_list'),
-    path('performances/', views.performance_list, name='performance_list'),Ы
+    path('performances/', views.performance_list, name='performance_list'),
     path('performances/create/', views.performance_create, name='performance_create'),
     path('performances/<int:pk>/', views.performance_detail, name='performance_detail'),
     path('performances/<int:pk>/update/', views.performance_update, name='performance_update'),
     path('performances/<int:pk>/delete/', views.performance_delete, name='performance_delete'),
-    path('register/', UserRegisterView.as_view(), name='register'),
-    path('login/', UserLoginView.as_view(), name='login'),
+    path('register/', views.register_view, name='register'),
+    path('login/', views.login_view, name='login'),
     path('profile/<str:user>/', views.profile, name='profile'),
-
 ]

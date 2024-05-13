@@ -1,47 +1,40 @@
 
-from .models import Category, Performance
+from .models import Category, Performance, User
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import CreateView
 from django.urls import reverse_lazy, reverse
 from .models import Profile
+from django.contrib.auth import login
 
-from .forms import UserRegisterForm
+
+from .forms import RegistrationForm, LoginForm
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.views import LoginView
 
-from .forms import UserLoginForm
 from .forms import PerformanceForm
 
 
-class UserRegisterView(SuccessMessageMixin, CreateView):
-    """
-    Представление регистрации на сайте с формой регистрации
-    """
-    form_class = UserRegisterForm
-    success_url = reverse_lazy('profile')
-    template_name = 'register.html'
-    success_message = 'Вы успешно зарегистрировались. Можете войти на сайт!'
+def login_view(request):
+    if request.method == 'POST':
+        form = LoginForm(request, data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            return redirect('index')
+    else:
+        form = LoginForm()
+        return render(request, 'login.html', {'form': form})
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['title'] = 'Регистрация на сайте'
-        return context
-
-
-class UserLoginView(SuccessMessageMixin, LoginView):
-    """
-    Авторизация на сайте
-    """
-    form_class = UserLoginForm
-    template_name = 'login.html'
-    next_page = 'profile'
-    success_message = 'Добро пожаловать на сайт!'
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['title'] = 'Авторизация на сайте'
-        return context
-
+def register_view(request):
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect('index')
+    else:
+        form = RegistrationForm()
+        return render(request, 'register.html', {'form': form})
 
 
 def profile(request, user):

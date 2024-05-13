@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Delete Performance: {{ performance.title }}</title>
+    <title>Удаление: {{ performance.title }}</title>
 </head>
 <body>
-    <h1>Delete Performance: {{ performance.title }}</h1>
-    <p>Are you sure you want to delete this performance?</p>
+    <h1>Удалить постановку: {{ performance.title }}</h1>
+    <p>Вы точно хотите удалить постановку?</p>
 
     <form method="post">
         {% csrf_token %}
-        <button type="submit">Yes, Delete</button>
-        <a href="{% url 'performance_detail' performance.pk %}">Cancel</a>
+        <button type="submit">Да</button>
+        <a href="{% url 'performance_detail' performance.pk %}">Отмена</a>
     </form>
 </body>
 </html>
